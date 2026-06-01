@@ -1,9 +1,18 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# About Sandra
 
-::github{repo="saicaca/fuwari"}
+Hi! I'm Sandra, a passionate Spanish teacher helping people from all over the world speak Spanish with confidence.
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+I believe learning a language should be fun, practical, and personal. That's why my classes are tailored to your level, your goals, and your rhythm — whether you're a complete beginner or looking to polish your fluency.
+
+## What I offer
+
+- One-on-one online classes via video call
+- Conversational Spanish for real-life situations
+- Grammar made simple and easy to remember
+- Free resources to practice between lessons
+
+## This blog
+
+Here I share tips, tricks, vocabulary guides, and insights from my teaching experience. My goal is to give you tools you can use right away — not just theory.
+
+¿Listo para empezar? Let's do this together. 🌟

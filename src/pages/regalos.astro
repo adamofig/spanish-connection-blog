@@ -1,0 +1,80 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+---
+
+<MainGridLayout title="Regalos" description="Recursos gratuitos para estudiantes de español">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative">
+        <div class="card-base z-10 px-9 py-8 relative w-full">
+
+            <h1 class="text-3xl font-bold mb-2">¡Un Regalo para ti! 🎁</h1>
+            <div class="h-1 w-12 bg-[var(--primary)] rounded-full mb-6"></div>
+
+            <p class="text-75 text-lg mb-10 max-w-2xl">
+                Gracias por visitar Spanish Connection. Como muestra de mi agradecimiento,
+                he preparado estos recursos gratuitos para ayudarte en tu camino con el español.
+                ¡Descárgalos y empieza a practicar hoy mismo!
+            </p>
+
+            <!-- Subscription banner -->
+            <div class="rounded-[var(--radius-large)] p-8 mb-10 bg-[var(--primary)] text-white">
+                <h2 class="text-2xl font-bold mb-3 text-white">¿Quieres más recursos exclusivos?</h2>
+                <p class="text-white/80 text-base mb-4 max-w-xl">
+                    Suscríbete a la comunidad de Spanish Connection y recibe cada semana:
+                    guías de vocabulario, expresiones mexicanas, ejercicios prácticos y mucho más —
+                    todo directamente en tu correo, sin costo.
+                </p>
+                <ul class="text-white/90 space-y-2 mb-6 text-sm font-medium">
+                    <li>✅ Recursos descargables exclusivos para suscriptores</li>
+                    <li>✅ Consejos semanales de pronunciación y gramática</li>
+                    <li>✅ Acceso anticipado a nuevos materiales del blog</li>
+                    <li>✅ Invitaciones a clases de prueba gratuitas</li>
+                </ul>
+                <a
+                    href="https://www.instagram.com/spanishconnection_now"
+                    target="_blank"
+                    class="inline-block bg-white text-[var(--primary)] font-bold px-6 py-3 rounded-xl hover:opacity-90 transition"
+                >
+                    Sígueme en Instagram para enterarte primero
+                </a>
+            </div>
+
+            <!-- Free downloads -->
+            <h2 class="text-2xl font-bold mb-6">Recursos Gratuitos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="card-base p-6 flex flex-col gap-4">
+                    <div class="text-4xl">📋</div>
+                    <h3 class="text-xl font-bold">Vocabulario Esencial A2</h3>
+                    <p class="text-75 text-sm flex-1">
+                        Una guía completa con las palabras y frases clave que todo estudiante de nivel A2
+                        debe conocer para comunicarse con confianza.
+                    </p>
+                    <a
+                        href="/words_a2.pdf"
+                        target="_blank"
+                        class="inline-flex items-center gap-2 bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] text-[var(--btn-content)] font-bold px-5 py-3 rounded-xl transition text-sm"
+                    >
+                        Descargar PDF ↓
+                    </a>
+                </div>
+
+                <div class="card-base p-6 flex flex-col gap-4">
+                    <div class="text-4xl">💬</div>
+                    <h3 class="text-xl font-bold">Expresiones Mexicanas</h3>
+                    <p class="text-75 text-sm flex-1">
+                        Aprende el español que realmente se habla en las calles de México.
+                        Frases auténticas para sonar como un local.
+                    </p>
+                    <a
+                        href="/Spanish expressions.pdf"
+                        target="_blank"
+                        class="inline-flex items-center gap-2 bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] text-[var(--btn-content)] font-bold px-5 py-3 rounded-xl transition text-sm"
+                    >
+                        Descargar PDF ↓
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</MainGridLayout>

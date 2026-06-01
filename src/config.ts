@@ -8,12 +8,12 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Fuwari",
-	subtitle: "Demo Site",
+	title: "Spanish Connection",
+	subtitle: "Learn Spanish with Sandra",
 	lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
-		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: false, // Hide the theme color picker for visitors
+		hue: 220, // Blue matching the web page (#26547C)
+		fixed: true, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: false,
@@ -45,34 +45,31 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
+			name: "Regalos",
+			url: "/regalos/",
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://firebasestorage.googleapis.com/v0/b/appingles-pro.appspot.com/o/conversation-cards%2F6844bdf5010b60ab87a132dd%2Fnull-hif72p04vfu.webp?alt=media&token=82e70fb7-c69f-4f4e-af0f-5717efb3b89a", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Polito al rescate",
-	bio: "No te olvides de usar la app y visitar nuestras redes para practicar",
+	avatar: "/sandra.png", // Relative to the /public directory
+	name: "Sandra",
+	bio: "Spanish teacher helping you speak with confidence. ¡Vamos!",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			name: "Instagram",
+			icon: "fa6-brands:instagram",
+			url: "https://www.instagram.com/spanishconnection_now",
 		},
 		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "TikTok",
+			icon: "fa6-brands:tiktok",
+			url: "https://www.tiktok.com/@spanish.connection_now",
 		},
 		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			name: "Facebook",
+			icon: "fa6-brands:facebook",
+			url: "https://www.facebook.com/people/Spanishconnection/61584193331803",
 		},
 	],
 };
