@@ -41,8 +41,13 @@ const hasCover = image !== undefined && image !== null && image !== "";
 const coverWidth = "28%";
 
 const { remarkPluginFrontmatter } = await entry.render();
+
+// Generate a cyclic accent color (pink, yellow, teal) based on a hash of the post title
+const colors = ["var(--color-pink)", "var(--color-yellow)", "var(--color-teal)"];
+const hash = title.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+const accentColor = colors[hash % colors.length];
 ---
-<div class:list={["card-base flex flex-col-reverse md:flex-col w-full rounded-[var(--radius-large)] overflow-hidden relative", className]} style={style}>
+<div class:list={["card-base post-card flex flex-col-reverse md:flex-col w-full rounded-[var(--radius-large)] overflow-hidden relative", className]} style={`--card-accent: ${accentColor}; ${style || ""}`}>
     <div class:list={["pl-6 md:pl-9 pr-6 md:pr-2 pt-6 md:pt-7 pb-6 relative", {"w-full md:w-[calc(100%_-_52px_-_12px)]": !hasCover, "w-full md:w-[calc(100%_-_var(--coverWidth)_-_12px)]": hasCover}]}>
         <a href={url}
            class="transition group w-full block font-bold mb-3 text-3xl text-90
@@ -103,4 +108,32 @@ const { remarkPluginFrontmatter } = await entry.render();
 <div class="transition border-t-[1px] border-dashed mx-6 border-black/10 dark:border-white/[0.15] last:border-t-0 md:hidden"></div>
 
 <style define:vars={{coverWidth}}>
+    .post-card {
+        transition: translate 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background-color 0.3s, border-color 0.3s;
+        translate: 0px 0px;
+        scale: 1;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.02);
+    }
+    
+    @media (min-width: 768px) {
+        .post-card:hover {
+            translate: 0px -6px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+        
+        .post-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            background: var(--card-accent);
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 10;
+            transition: opacity 0.3s;
+        }
+    }
 </style>

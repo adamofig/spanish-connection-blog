@@ -14,6 +14,12 @@ export function getDefaultHue(): number {
 }
 
 export function getHue(): number {
+	const configCarrier = document.getElementById("config-carrier");
+	const isFixed = configCarrier?.dataset.fixed === "true";
+	if (isFixed) {
+		const isDark = document.documentElement.classList.contains("dark");
+		return isDark ? 176 : 340;
+	}
 	const stored = localStorage.getItem("hue");
 	return stored ? Number.parseInt(stored) : getDefaultHue();
 }
@@ -42,6 +48,17 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 				document.documentElement.classList.remove("dark");
 			}
 			break;
+	}
+
+	const configCarrier = document.getElementById("config-carrier");
+	const isFixed = configCarrier?.dataset.fixed === "true";
+	if (isFixed) {
+		const isDark = document.documentElement.classList.contains("dark");
+		const hue = isDark ? 176 : 340;
+		const r = document.querySelector(":root") as HTMLElement;
+		if (r) {
+			r.style.setProperty("--hue", String(hue));
+		}
 	}
 
 	// Set the theme for Expressive Code

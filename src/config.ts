@@ -12,12 +12,12 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Learn Spanish with Sandra",
 	lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
-		hue: 220, // Blue matching the web page (#26547C)
+		hue: 176, // Teal matching the web page (#00BFB2)
 		fixed: true, // Hide the theme color picker for visitors
 	},
 	banner: {
-		enable: false,
-		src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		enable: true,
+		src: "/background_sandra.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -52,7 +52,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/sandra.png", // Relative to the /public directory
+	avatar: "/sandra_final.webp", // Relative to the /public directory
 	name: "Sandra",
 	bio: "Spanish teacher helping you speak with confidence. ¡Vamos!",
 	links: [
