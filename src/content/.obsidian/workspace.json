@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "_bases/Home.base",
+                "viewName": "Posts"
+              },
+              "pinned": true,
+              "icon": "lucide-home",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5226f8b0628a7cb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc4709aa1c676696",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e7af8c4a70fce67",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bb953188b568fd71",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dbbd34a91c42bfcb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ef6441f4537298cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "483552e7993e09ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3d180c838bdfbe9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3a075e07d84aaab9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_bases/Home.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "astro-composer:Edit Astro config": false,
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "seo:Open SEO audit panel": false,
+      "astro-composer:Open project terminal": false,
+      "home-base:Open home base": false,
+      "obsidian-git:Open Git source control": false,
+      "zenmode:Toggle zen mode": false,
+      "obsidian42-brat:BRAT": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "posts/6855b2f1428d50dab2b9dffe.md",
+    "posts/aprende-con-ai.md",
+    "posts/6855b30a428d50dab2b9e006.md",
+    "posts/no-seas-como-el-97.md",
+    "posts/tutor-de-ingles.md",
+    "posts/aprender-ingles-con-videos.md",
+    "posts/ingles-devs-java-gcp-docker.md",
+    "posts/como-agregar-scenarios-maestros.md",
+    "posts/como-agregar-un-idioma-objetivo.md",
+    "posts/automatizaciones-obsidian-ingles.md",
+    "posts/habla-dinero-idiomas-y-riqueza.md",
+    "_bases/Home.base",
+    "posts/iniciando-las-automatizaciones-con-obsidian.md",
+    "posts/attachments/orange.jpg",
+    "posts/attachments",
+    "post/iniciando-las-automatizaciones-con-obsidian.md",
+    "post/attachments/orange.jpg",
+    "post/attachments",
+    "posts/6855cea7428d50dab2b9e0a6.md",
+    "post_6855b30a428d50dab2b9e006.md",
+    "post/6855b30a428d50dab2b9e006.md",
+    "post"
+  ]
+}
